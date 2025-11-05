@@ -1,19 +1,34 @@
-# utils.py - ¹¤¾ßº¯ÊıÄ£¿é 
- 
-class Calculator: 
-    """¼ÆËãÆ÷Àà""" 
- 
-    @staticmethod 
-    def add(a, b): 
-        """¼Ó·¨ÔËËã""" 
-        return a + b 
- 
-    @staticmethod 
-    def subtract(a, b): 
-        """¼õ·¨ÔËËã""" 
-        return a - b 
- 
-    @staticmethod 
-    def multiply(a, b): 
-        """³Ë·¨ÔËËã""" 
-        return a * b 
+# utils.py - å·¥å…·å‡½æ•°æ¨¡å—
+
+class Calculator:
+    """è®¡ç®—å™¨ç±»"""
+    
+    @staticmethod
+    def add(a, b):
+        """åŠ æ³•è¿ç®—"""
+        return a + b
+    
+    @staticmethod
+    def subtract(a, b):
+        """å‡æ³•è¿ç®—"""
+        return a - b
+    
+    @staticmethod
+    def multiply(a, b):
+        """ä¹˜æ³•è¿ç®—"""
+        return a * b
+
+def check_even_odd(number):
+    """æ£€æŸ¥å¥‡å¶æ€§"""
+    return "å¶æ•°" if number % 2 == 0 else "å¥‡æ•°"
+
+def get_factorial(n):
+    """è®¡ç®—é˜¶ä¹˜"""
+    if n == 0:
+        return 1
+    else:
+        return n * get_factorial(n-1)
+
+def greet_user(name):
+    """é—®å€™ç”¨æˆ·å‡½æ•°"""
+    return f"æ¬¢è¿ {name} ä½¿ç”¨æµ‹è¯•é¡¹ç›®ï¼"
