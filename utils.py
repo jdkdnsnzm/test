@@ -31,4 +31,6 @@ def get_factorial(n):
 
 def greet_user(name):
     """é—®å€™ç”¨æˆ·å‡½æ•°"""
-    return f"æ¬¢è¿ {name} ä½¿ç”¨æµ‹è¯•é¡¹ç›®ï¼"
+    return f"æ¬¢è¿ {name} ä½¿ç”¨æµ‹è¯•é¡¹ç›®ï¼"# ÕâÊÇÒ»¸ö´íÎóº¯Êı 
+def bad_function(): 
+    return 1 / 0  # ¹ÊÒâÖÆÔì´íÎó 
